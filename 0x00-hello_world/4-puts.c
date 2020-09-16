@@ -1,4 +1,10 @@
 #include<stdio.h>
+/**
+  * main - print text on the terminal
+  *
+  *
+  * return - always return 0
+  */
 
 int main(void)
 {

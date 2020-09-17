@@ -7,7 +7,7 @@
   * main - just get a number
   * @void: nothing parameter expected
   *
-  * choise a message if the number is higher that 1 print "is positive" | if is less the 1  print "is negative" or if the number es 0 print "is zero"
+  * choose a message if the number is higher that 1 print "is positive" | if is less the 1  print "is negative" or if the number es 0 print "is zero"
   * Return: 0
   */
 int main(void)
@@ -17,6 +17,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
+	n=0;
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);

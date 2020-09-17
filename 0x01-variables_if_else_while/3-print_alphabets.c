@@ -1,6 +1,5 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
+
 /**
   * main - just get a number
   * @void: nothing parameter expected
@@ -10,19 +9,12 @@
   */
 int main(void)
 {
-	char *n = "abcdefghijklmnopqrstuvwxyz\n";
+	char c;
 
-	while (*n)
-	{
-		if (*n != 'q' && *n != 'e')
-		{
-			putchar(*n);
-			n++;
-		} else
-		{
-			n++;
-		}
-	}
-
+	for (c = 'a'; c <= 'z'; ++c)
+		putchar(c);
+	for (c = 'A'; c <= 'Z'; ++c)
+		putchar(c);
+	putchar('\n');
 	return (0);
 }

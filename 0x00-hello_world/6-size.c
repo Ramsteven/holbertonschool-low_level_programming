@@ -6,10 +6,8 @@
   * This function only print on screen thex inside puts()
   * Return:  always return 0
   */
-
 int main(void)
-{	
-	char c;
+{	char c;
 	int i;
 	long int li;
 	long long ll;

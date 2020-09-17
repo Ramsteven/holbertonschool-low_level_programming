@@ -5,10 +5,10 @@
 /* betty style doc for function main goes there */
 /**
   * main - just get a number
+  * @void: nothing parameter expected
   *
-  *
-  *
-  *
+  * choise a message if the number is higher that 1 print "is positive" | if is less the 1  print "is negative" or if the number es 0 print "is zero"
+  * Return: 0
   */
 int main(void)
 {
@@ -23,6 +23,9 @@ int main(void)
 	} else if (n < 0)
 	{
 		printf("%d is negative\n", n);
+	} else if (n == 0)
+	{
+		printf("%d is zero\n", n);
 	}
 	return (0);
 }

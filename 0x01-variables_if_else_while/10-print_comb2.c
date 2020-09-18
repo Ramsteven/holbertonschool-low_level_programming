@@ -13,17 +13,17 @@ int main(void)
 
 	for (c = '0'; c <= '9'; c++)
 	{
-			for (x = '0'; x <= '9'; x++)
-			{
-				putchar(c);
-				putchar(x);
+		for (x = '0'; x <= '9'; x++)
+		{
+			putchar(c);
+			putchar(x);
 
-				if (x != '9' ||  c != '9')
-				{
-					putchar(',');
-					putchar(' ');
-				}
+			if (x != '9' ||  c != '9')
+			{
+				putchar(',');
+				putchar(' ');
 			}
+		}
 	}
 	putchar('\n');
 	return (0);

@@ -1,4 +1,4 @@
-/* _ putchar */
+/* _putchar */
 int _putchar(char);
 
 /* print_alphabet */
@@ -9,4 +9,3 @@ void print_alphabet_x10(void);
 
 /* function that checks for lowercase return 1 o 0 otherwise */
 int _islower(int c);
-

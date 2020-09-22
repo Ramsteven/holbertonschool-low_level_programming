@@ -12,3 +12,7 @@ int _islower(int c);
 
 /* function that checks for character alphabetic return >0 o 0 otherwise */
 int _isalpha(int c);
+
+/* function that print the sign of a number*/
+int print_sign(int n);
+

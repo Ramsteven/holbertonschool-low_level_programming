@@ -9,3 +9,6 @@ void print_alphabet_x10(void);
 
 /* function that checks for lowercase return 1 o 0 otherwise */
 int _islower(int c);
+
+/* function that checks for character alphabetic return >0 o 0 otherwise */
+int _isalpha(int c);

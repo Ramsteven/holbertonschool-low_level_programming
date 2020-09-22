@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
-  * print_aphabet_x10 - print alphabet 10 times
+  * print_aphabet_x10- print alphabet 10 times
   *
-  * Return: no return nothing
+  * Return: not return
   */
 void print_alphabet_x10(void)
 {
@@ -18,7 +18,5 @@ void print_alphabet_x10(void)
 			_putchar(c);
 		}
 		_putchar('\n');
-
 	}
-
 }

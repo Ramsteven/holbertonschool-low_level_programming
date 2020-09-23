@@ -1,10 +1,10 @@
-#include "holberton.h"
 #include <ctype.h>
+#include "holberton.h"
 
 /**
+  * _islower - check if c is a lowercase
   *
-  *Return file
-  *
+  * Return 1 if is lower case otherwise return 0
   */
 
 int _islower(int c)

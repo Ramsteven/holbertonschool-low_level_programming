@@ -3,8 +3,9 @@
 
 /**
   *_isalpha - check if c is a letter
+  *@c: letter or number to check
   *
-  *Return 1 if c is a letter otherwise 0
+  *Return: 1 if c is a letter otherwise 0
   *
   */
 

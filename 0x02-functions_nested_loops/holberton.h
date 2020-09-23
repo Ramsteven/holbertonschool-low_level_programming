@@ -21,3 +21,6 @@ int _abs(int);
 
 /* function that print the last digit of a number  */
 int print_last_digit(int);
+
+/*function tha prints every minute of day of jack Baue star 00:00 to 23_50*/
+void jack_bauer(void);

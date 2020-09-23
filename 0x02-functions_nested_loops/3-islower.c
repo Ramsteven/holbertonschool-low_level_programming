@@ -1,4 +1,3 @@
-#include <ctype.h>
 #include "holberton.h"
 
 /**
@@ -10,9 +9,10 @@
 
 int _islower(int c)
 {
-	if(islower(c) > 0){
-		return(1);
-	} 
-	
+
+	if(c <='z' && c >= 'a')
+	{
+		return (1);	
+	}
 	return (0);
 }

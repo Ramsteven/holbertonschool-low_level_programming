@@ -24,3 +24,6 @@ int print_last_digit(int);
 
 /*function tha prints every minute of day of jack Baue star 00:00 to 23_50*/
 void jack_bauer(void);
+
+/*function create 9 time table */
+void times_table(void);

@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-  * print_aphabet_x10- print alphabet 10 times
+  * print_alphabet_x10 - print alphabet 10 times
   * @void: nothing file specific
   *
   * Return: not return

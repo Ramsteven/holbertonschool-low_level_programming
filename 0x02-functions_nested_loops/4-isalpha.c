@@ -1,4 +1,3 @@
-#include <ctype.h>
 #include "holberton.h"
 
 /**
@@ -11,7 +10,11 @@
 
 int _isalpha(int c)
 {
-	if (isalpha(c) > 0)
+	if (c <= 'Z' && c >= 'A')
+	{
+		return (1);
+	}
+	if (c <= 'z' && c >= 'a')
 	{
 		return (1);
 	}

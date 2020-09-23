@@ -29,4 +29,9 @@ void jack_bauer(void);
 void times_table(void);
 
 /* function add two integer numbers */
- int add(int, int);
+int add(int, int);
+
+/* funciton than print of a number to 98 */
+void print_to_98(int n);
+
+

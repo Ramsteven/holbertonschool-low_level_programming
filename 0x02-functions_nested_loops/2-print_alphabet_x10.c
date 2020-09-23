@@ -2,7 +2,7 @@
 
 /**
   * print_aphabet_x10- print alphabet 10 times
-  * @c: for nested to print a to z
+  * @void: nothing file specific
   *
   * Return: not return
   */

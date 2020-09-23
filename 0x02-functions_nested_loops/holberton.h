@@ -27,3 +27,6 @@ void jack_bauer(void);
 
 /*function create 9 time table */
 void times_table(void);
+
+/* function add two integer numbers */
+ int add(int, int);

@@ -2,8 +2,9 @@
 #include "holberton.h"
 
 /**
+  *_isalpha - check if c is a letter
   *
-  *Return file
+  *Return 1 if c is a letter otherwise 0
   *
   */
 

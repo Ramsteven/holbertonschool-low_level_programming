@@ -22,5 +22,9 @@ void more_numbers(void);
 /** function than print character '_' n times*/
 void print_line(int n);
 
-/** function than prin charcater '\' n times*/
+/** function than print charcater '\' n times*/
 void print_diagonal(int n);
+
+/** function than print square with the argument number **/
+void print_square(int size);
+

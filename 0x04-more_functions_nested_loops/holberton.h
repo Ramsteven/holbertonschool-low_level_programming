@@ -28,3 +28,5 @@ void print_diagonal(int n);
 /** function than print square with the argument number **/
 void print_square(int size);
 
+/** function than print a triagule with # */
+void print_triangle(int size);

@@ -6,11 +6,11 @@
   *
   * Return: no return
   **/
-void main(void)
+int main()
 {
-	int x = 1;
+	int x;
 
-	for (x; x <= 100; x++)
+	for (x = 1; x <= 100; x++)
 	{
 		if ((x % 5 == 0 ||  x % 3 == 0) && x != 1)
 		{
@@ -30,4 +30,6 @@ void main(void)
 		}
 	}
 	printf("\n");
+
+	return (0);
 }

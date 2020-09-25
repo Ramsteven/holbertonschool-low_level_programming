@@ -30,3 +30,6 @@ void print_square(int size);
 
 /** function than print a triagule with # */
 void print_triangle(int size);
+
+/** function print a integer with putchar**/
+void print_number(int n);

@@ -7,7 +7,7 @@
   * Return: not return
   **/
 void print_number(int n)
-{   
+{
 	unsigned int x;
 
 	if (n >= 0)
@@ -20,7 +20,7 @@ void print_number(int n)
 	}
 	else
 	{
-		x = -n; 
+		x = -n;
 		_putchar('-');
 		print_number(x);
 	}

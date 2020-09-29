@@ -10,6 +10,7 @@ void print_number(int n)
 {
 	unsigned int x;
 
+
 	if (n >= 0)
 	{
 		if (n / 10 != 0)
@@ -22,6 +23,19 @@ void print_number(int n)
 	{
 		x = -n;
 		_putchar('-');
-		print_number(x);
+		
+		while( x / 10 != 0)
+		{
+			if( x >= 0)
+			{
+				x = x / 10;	
+			}	
+			_putchar( x % 10 + '0');
+		}
+		
+
+
+
+
 	}
 }

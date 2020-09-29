@@ -8,3 +8,5 @@ int _strlen(char *s);
 void _puts(char *str);
 /** write a char on stout*/
 int  _putchar(char c);
+/** print string in reverse **/
+void print_rev(char *s);

@@ -8,11 +8,13 @@
   **/
 void puts2(char *str)
 {
+	int len;
 	char *string;
 
 	string = str;
+	len = _strlen(str);
 
-	if (*string != '\0')
+	if (len != 0)
 	{
 		for (; *string != '\0' ; string += 2)
 		{
@@ -21,3 +23,24 @@ void puts2(char *str)
 	}
 	_putchar('\n');
 }
+
+/**
+  * _strlen - obtain the length of a string
+  *@s: gives string
+  *
+  * Return: return size of the string
+  **/
+
+int _strlen(char *s)
+{
+	int i = 0;
+	char *u = s;
+
+	while (*u != '\0')
+	{
+		i++;
+		u++;
+	}
+	return (i);
+}
+

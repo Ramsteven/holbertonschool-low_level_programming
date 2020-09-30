@@ -12,3 +12,5 @@ int  _putchar(char c);
 void print_rev(char *s);
 /** return string in reverse **/
 void rev_string(char *s);
+/** print every one character of a string **/
+void puts2(char *str);

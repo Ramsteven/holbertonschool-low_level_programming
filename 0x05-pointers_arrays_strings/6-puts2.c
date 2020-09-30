@@ -12,9 +12,12 @@ void puts2(char *str)
 
 	string = str;
 
-	for (; *string != '\0' ; string += 2)
+	if (*string != '\0')
 	{
-		_putchar(*string);
+		for (; *string != '\0' ; string += 2)
+		{
+			_putchar(*string);
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }

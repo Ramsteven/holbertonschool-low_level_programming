@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-  * _strcpy: function that copies the string pointed to by src, including '\0'
+  * _strcpy- function that copies the string pointed to by src, including '\0'
   *@dest: pointer destiny
   *@src : gives string
   *Return: pointer destiny cp src

@@ -7,3 +7,5 @@ char *_strcat(char *dest, char *src);
 /** len of a string **/
  int _strlen(char *s);
 
+/** concatenate two strings with n bytes **/
+ char *_strncat(char *dest, char *src, int n);

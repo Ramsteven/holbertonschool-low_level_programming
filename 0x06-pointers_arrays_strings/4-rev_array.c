@@ -12,12 +12,16 @@ void reverse_array(int *a, int n)
 	int k = 0;
 	int *pointer2 = a + n - 1;
 
-	while (*pointer2 > *a)
+	if (n > 0)
 	{
-		k = *a;
-		*a = *pointer2;
-		*pointer2 = k;
-		pointer2--;
-		a++;
+
+		while (*pointer2 > *a)
+		{
+			k = *a;
+			*a = *pointer2;
+			*pointer2 = k;
+			pointer2--;
+			a++;
+		}
 	}
 }

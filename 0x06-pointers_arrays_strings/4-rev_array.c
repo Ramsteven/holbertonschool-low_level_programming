@@ -11,17 +11,15 @@ void reverse_array(int *a, int n)
 {
 	int k = 0;
 	int *pointer2 = a + n - 1;
-
-	if (n > 1)
+	int i = 0;
+	
+	while (a <= pointer2)
 	{
-
-		while (*pointer2 > *a)
-		{
-			k = *a;
-			*a = *pointer2;
-			*pointer2 = k;
-			pointer2--;
-			a++;
-		}
+		k = *a;
+		*a = *pointer2;
+		*pointer2 = k;
+		pointer2--;
+		a++;
+		i++;
 	}
 }

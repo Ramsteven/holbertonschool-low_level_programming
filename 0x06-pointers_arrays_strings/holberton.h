@@ -12,3 +12,6 @@ char *_strcat(char *dest, char *src);
 
 /** function that copy any string **/
  char *_strncpy(char *dest, char *src, int n);
+
+ /** function the compares two strings */
+ int _strcmp(char *s1, char *s2);

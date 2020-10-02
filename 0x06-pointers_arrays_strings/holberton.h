@@ -11,10 +11,14 @@ char *_strcat(char *dest, char *src);
  char *_strncat(char *dest, char *src, int n);
 
 /** function that copy any string **/
- char *_strncpy(char *dest, char *src, int n);
+char *_strncpy(char *dest, char *src, int n);
 
- /** function the compares two strings */
- int _strcmp(char *s1, char *s2);
+/** function the compares two strings */
+int _strcmp(char *s1, char *s2);
 
- /** function than reverse to array*/
- void reverse_array(int *a, int n);
+/** function than reverse to array*/
+void reverse_array(int *a, int n);
+
+/** changes all lowercase letters of a string to uppercase*/
+char *string_toupper(char *);
+

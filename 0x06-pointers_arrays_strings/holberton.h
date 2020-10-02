@@ -15,3 +15,6 @@ char *_strcat(char *dest, char *src);
 
  /** function the compares two strings */
  int _strcmp(char *s1, char *s2);
+
+ /** function than reverse to array*/
+ void reverse_array(int *a, int n);

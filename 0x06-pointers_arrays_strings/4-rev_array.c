@@ -12,7 +12,7 @@ void reverse_array(int *a, int n)
 	int k = 0;
 	int *pointer2 = a + n - 1;
 
-	if (n > 0)
+	if (n > 1)
 	{
 
 		while (*pointer2 > *a)

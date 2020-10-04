@@ -20,11 +20,10 @@ char *rot13(char *s)
 			|| s[i] >= 'a')) || (((s[i] + 13) >= 'A' && (s[i] + 13)  <= 'Z')))
 			{
 				s[i] = s[i] + 13;
+				break;
 			}
-			else
-			{
+			
 				s[i] = s[i] - 13;
-			}
 		}
 	}
 	return (s);

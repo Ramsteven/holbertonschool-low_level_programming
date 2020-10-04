@@ -4,7 +4,7 @@
   * leet - function than encodes a string to 1337
   * @s: gives string
   *
-  * Return: change values betbeen two arrays if the letter is aA ,eE, oO, tT, lL
+  * Return: change betbeen two arrays if the letter is aA ,eE, oO, tT, lL
   **/
 char *leet(char *s)
 {

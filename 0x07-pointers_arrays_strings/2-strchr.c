@@ -10,6 +10,7 @@
 char *_strchr(char *s, char c)
 {
 	char *p;
+
 	p = s;
 
 	while (*p)

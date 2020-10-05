@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-  * _memset- fill memoty with a constant byte 
+  * _memset- fill memoty with a constant byte
   *@s: pointer of the array
   *@b: char to fill
   *@n: fill n times

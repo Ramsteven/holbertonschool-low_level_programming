@@ -15,6 +15,9 @@ char *_strstr(char *haystack, char *needle)
 	unsigned int k = 0;
 	unsigned int w;
 
+	if (needle[k] == "")
+		return (0);
+
 	while (needle[k] != '\0')
 		k++;
 

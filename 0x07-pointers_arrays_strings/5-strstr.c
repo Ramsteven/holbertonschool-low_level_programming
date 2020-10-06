@@ -15,7 +15,7 @@ char *_strstr(char *haystack, char *needle)
 	unsigned int k = 0;
 	unsigned int w;
 
-	if (!*needle)
+	if (*needle == '\0') 
 		return (haystack);
 
 	while (needle[k] != '\0')

@@ -40,10 +40,5 @@ char *_strstr(char *haystack, char *needle)
 			x = 0;
 		}
 	}
-
-	if (haystack == needle)
-		return (haystack);
-	}
-
 	return (0);
 }

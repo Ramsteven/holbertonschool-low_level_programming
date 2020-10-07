@@ -12,3 +12,6 @@ int _strlen_recursion(char *s);
 
 /** function that return the factorial of a given number*/
 int factorial(int n);
+
+/** function that returns the value of x raised y**/
+int _pow_recursion(int x, int y);

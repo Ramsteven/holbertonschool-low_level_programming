@@ -20,5 +20,5 @@ void print_diagsums(int *a, int size)
 		add1 += a[i];
 		add2 += a[i+j];
 	}
-	printf("%d , %d \n", add1, add2);
+	printf("%d, %d\n", add1, add2);
 }

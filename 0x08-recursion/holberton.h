@@ -19,4 +19,11 @@ int _pow_recursion(int x, int y);
 /** function thar returns the natural square root of a number**/
 int _sqrt_recursion(int n);
 
+/** function that help for found the square root number**/
 int helper(int x, int n);
+
+/** function that show if a number is prime or not**/
+int is_prime_number(int n);
+
+/** function that support is_prime_number**/
+int helper_prime(int x, int n);

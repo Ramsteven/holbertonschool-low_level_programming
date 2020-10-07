@@ -19,4 +19,8 @@ char *_strstr(char *haystack, char *needle);
 /** function that prints the chessboard**/
 void print_chessboard(char (*a)[8]);
 
+/** function that prints a char **/
 int _putchar(char c);
+
+/** function that print the sum the two diagonals **/
+void print_diagsums(int *a, int size);

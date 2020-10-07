@@ -24,3 +24,6 @@ int _putchar(char c);
 
 /** function that print the sum the two diagonals **/
 void print_diagsums(int *a, int size);
+
+/** function that sets the value of a pointer to a char*/
+void set_string(char **s, char *to);

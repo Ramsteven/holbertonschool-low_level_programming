@@ -3,3 +3,7 @@ int _putchar(char c);
 
 /** function that prints a string followed of a new line**/
 void _puts_recursion(char *s);
+
+/** function that prints a string followed of a new line**/
+void _print_rev_recursion(char *s);
+

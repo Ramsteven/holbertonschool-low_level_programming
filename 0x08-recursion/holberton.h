@@ -26,4 +26,10 @@ int helper(int x, int n);
 int is_prime_number(int n);
 
 /** function that support is_prime_number**/
-int helper_prime(int x, int n);
+int helper_prime(int x, int n, int i);
+
+/** function that returns 1 if a string a palindrome and 0 if not **/
+int is_palindrome(char *s);
+
+/** helper_palindrome**/
+int helper_palindrome(int i, int k, char *s);

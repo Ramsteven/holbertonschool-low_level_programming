@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
   *is_palindrome- Write a function that returns the
@@ -36,8 +37,5 @@ int helper_palindrome(int i, int k, char *s)
 	if (s[i] != s[k])
 		return (0);
 
-	if (s[i] == s[k])
-		helper_palindrome(i - 1, k - 1, s);
-
-	return (1);
+	return (helper_palindrome(i - 1, k + 1, s));
 }

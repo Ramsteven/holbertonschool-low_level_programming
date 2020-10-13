@@ -21,22 +21,24 @@ int main(int argc, char *argv[])
 		printf("%d\n", 0);
 		return (0);
 	}
-
-	for (i = 1; i < argc; i++)
+	else
 	{
-		for (j = 0; argv[i][j] != '\0'; j++)
+		for (i = 1; i < argc; i++)
 		{
-			if (argv[i][j] >= 48 && argv[i][j] <= 57)
+			for (j = 0; argv[i][j] != '\0'; j++)
 			{
+				if (argv[i][j] >= 48 && argv[i][j] <= 57)
+				{
+				}
+				else
+				{
+					printf("Error");
+					return (1);
+				}
 			}
-			else
-			{
-				printf("Error");
-				return (1);
-			}
+			x = x + atoi(*(argv + i));
 		}
-		x = x + atoi(*(argv + i));
+		printf("%d\n", x);
 	}
-	printf("%d\n", x);
 	return (0);
 }

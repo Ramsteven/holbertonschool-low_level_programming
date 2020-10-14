@@ -48,6 +48,6 @@ char *str_concat(char *s1, char *s2)
 		p[k] = *(s1 + k);
 	for (n = 0; k < j + i; k++, n++)
 		p[k] = *(s2 + n);
-
+	p[k] = '\0'
 	return (p);
 }

@@ -40,7 +40,7 @@ char *str_concat(char *s1, char *s2)
 	i = size(s1);
 	j = size(s2);
 
-	p = malloc(sizeof(char) * i + k + 1);
+	p = malloc(sizeof(char) * (i + k) + 1);
 
 	if (!p)
 		return (NULL);
@@ -49,7 +49,7 @@ char *str_concat(char *s1, char *s2)
 		p[k] = *(s1 + k);
 	for (n = 0; k < j + i; k++, n++)
 		p[k] = *(s2 + n);
-	p[k] = 0;
+	p[k] = '\0';
 
 	return (p);
 }

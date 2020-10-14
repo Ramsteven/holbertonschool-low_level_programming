@@ -33,12 +33,18 @@ char *str_concat(char *s1, char *s2)
 	int n;
 
 	if (!s1)
+	{
 		i = 0;
+		s1 = "";
+	}
 	else
 		i = size(s1);
 
 	if (!s2)
+	{
 		j = 0;
+		s2 = "";
+	}
 	else
 		j = size(s2);
 

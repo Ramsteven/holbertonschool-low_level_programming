@@ -1,6 +1,5 @@
 #include "holberton.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
   *size-return size of a string.
@@ -38,7 +37,6 @@ int **alloc_grid(int width, int height)
 
 	if (array == NULL)
 	{
-		printf("out of memory\n");
 		return (NULL);
 	}
 
@@ -47,7 +45,6 @@ int **alloc_grid(int width, int height)
 		array[i] = malloc(width * sizeof(int));
 		if (array[i] == NULL)
 		{
-			printf("out of memory\n");
 			return (NULL);
 		}
 	}

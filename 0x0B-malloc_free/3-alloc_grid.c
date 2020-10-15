@@ -2,23 +2,6 @@
 #include <stdlib.h>
 
 /**
-  *size-return size of a string.
-  *@str:gives string.
-  *
-  *Return: return size of a string.
-  **/
-int size(char *str)
-{
-	int i = 0;
-
-	while (str[i] != '\0')
-		i++;
-
-	return (i);
-}
-
-
-/**
   *alloc_grid- concatenate two string.
   *@width: with matrix
   *@height: heigth matrix
@@ -31,17 +14,13 @@ int **alloc_grid(int width, int height)
 	int i;
 	int j;
 
-	if (width < 1 || height < 1)
+	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	array = (int **)malloc(height * sizeof(int *));
+	array = (int **) malloc(height * sizeof(int *));
 
 	if (array == NULL)
-	{
-		free(array);
 		return (NULL);
-
-	}
 
 	for (i = 0; i < width; i++)
 	{

@@ -27,10 +27,7 @@ int size(char *str)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p = NULL;
-	unsigned int i = 0;
-	unsigned int k = 0;
-	unsigned int j = 0;
-	unsigned int l;
+	unsigned int i = 0, k = 0, j = 0, l;
 
 	if (!s1)
 	{
@@ -48,8 +45,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else
 		j = size(s2);
 
-		if (n >= j)
+		if (n > j)
 			n = j;
+		else
+			j = n;
 
 	p = malloc(sizeof(char) * (i + j) + 1);
 

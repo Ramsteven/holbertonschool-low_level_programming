@@ -13,6 +13,8 @@ int *array_range(int min, int max)
 	int *ptr;
 	int i, j, k;
 
+	if (!min || !max)
+		return (NULL);
 	if (min > max)
 	{
 		return (NULL);

@@ -11,10 +11,8 @@
 int *array_range(int min, int max)
 {
 	int *ptr;
-	int i, j, k;
-
-	if (!min || !max)
-		return (NULL);
+	long int i, j, k;
+	
 	if (min > max)
 	{
 		return (NULL);

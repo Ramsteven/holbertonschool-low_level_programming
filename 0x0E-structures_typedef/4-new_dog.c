@@ -61,9 +61,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		
 		
 		
-		while(i <= len2 + 1)
+		while(j <= len2 + 1)
 		{
-			ownerDog[i] = owner[i];
+			ownerDog[i] = owner[j];
 			j++;
 		}
 		

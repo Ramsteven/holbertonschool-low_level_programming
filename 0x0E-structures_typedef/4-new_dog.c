@@ -53,7 +53,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	else
 	{
-		while(i <= len1)
+		while(i <= len1 + 1)
 		{
 			nameDog[i] = name[i];
 			i++;
@@ -61,7 +61,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		
 		
 		
-		while(i <= len2)
+		while(i <= len2 + 1)
 		{
 			ownerDog[i] = owner[i];
 			j++;

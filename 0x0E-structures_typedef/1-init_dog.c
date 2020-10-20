@@ -1,7 +1,7 @@
 #include "dog.h"
 
 /**
-  *int_dog- function that set parameters
+  *init_dog- function that set parameters
   *@d:adding task
   *@name: name of dog
   *@age: age of dog

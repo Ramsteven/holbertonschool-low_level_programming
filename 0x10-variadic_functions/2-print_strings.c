@@ -18,7 +18,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		string = va_arg(Valist, char *);
 		printf("%s", string == NULL ? "(nil)" : string);
 
-		if (i != n - 1 && separator[0] != '\0')
+		if (separator && i != n - 1 && separator[0] != '\0')
 			printf("%s", separator);
 	}
 	printf("\n");

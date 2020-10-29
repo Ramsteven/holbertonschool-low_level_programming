@@ -48,10 +48,12 @@ int _strl(const char *str);
 /*Start function */
 void _start(void);
 
-/* Apply the constructor attribute to myStartupFun()  
-   so that it is executed before main() */
-void myStartupFun(void) __attribute__((constructor)); 
-  
+/**
+  *myStrartupFun-Apply the constructor attribute to myStartupFun()
+  *so that it is executed before main()
+  **/
+void myStartupFun(void) __attribute__((constructor));
+
 /* implementation of myStartupFun */
 void myStartupFun(void);
 

@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-  *list lenght- return numbers of elements of the list
+  *list_len- return numbers of elements of the list
   *@h: list received
   *
   * Return: number of nodes

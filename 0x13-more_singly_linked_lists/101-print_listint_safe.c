@@ -4,7 +4,7 @@
   *@head: list received
   *
   *Return: numbers of nodes
-  **/ 
+  **/
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t i = 0;
@@ -15,17 +15,17 @@ size_t print_listint_safe(const listint_t *head)
 	{
 		result = head - head->next;
 		i++;
-		printf("[%p] %i\n",(void *)head, head->n);
+		printf("[%p] %i\n", (void *)head, head->n);
 
-		if(result > 0)
+		if (result > 0)
 			head = head->next;
 		else
 		{
-			printf("-> [%p] %i\n",(void *)head->next, head->next->n);
-			break;
+			printf("-> [%p] %i\n", (void *)head->next, head->next->n);
+			exit(98);
 		}
 
 
 	}
 	return (i);
-}	
+}

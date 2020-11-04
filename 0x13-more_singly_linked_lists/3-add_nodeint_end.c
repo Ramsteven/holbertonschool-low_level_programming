@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
-  *add_node_end- add  element in the last part of the list
+  *add_nodeint_end- add  element in the last part of the list
   *@head:the firts node
-  *@str: string to add to the new node
+  *@n: string to add to the new node
   * Return: return list created
   **/
 listint_t *add_nodeint_end(listint_t **head, const int n)

@@ -4,7 +4,7 @@
   *sum_listint-function that returns the sum all data
   *@head: list received
   *
-  *Return- the sum all data inside the list
+  *Return: the sum all data inside the list
   **/
 int sum_listint(listint_t *head)
 {

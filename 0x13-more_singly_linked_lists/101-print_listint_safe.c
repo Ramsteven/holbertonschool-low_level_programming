@@ -7,9 +7,9 @@
   **/
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t i = 0;
+	int i = 0;
 
-	int result = 0;
+	int result;
 
 	while (head)
 	{

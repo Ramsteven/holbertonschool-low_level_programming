@@ -7,9 +7,11 @@
   **/
 size_t print_listint_safe(const listint_t *head)
 {
-	int i = 0;
+	register short i = 0;
 
 	int result;
+
+
 
 	while (head)
 	{
@@ -22,7 +24,7 @@ size_t print_listint_safe(const listint_t *head)
 		else
 		{
 			printf("-> [%p] %i\n", (void *)head->next, head->next->n);
-			exit(98);
+			break;
 		}
 	}
 	return (i);

@@ -9,6 +9,10 @@
 #include <fcntl.h>
 #include <elf.h>
 
+
+/*amount of string*/
+int _strl(const char *n);
+
 /*function that reads a text file and prints it to the POSIX standard output.*/
 ssize_t read_textfile(const char *filename, size_t letters);
 

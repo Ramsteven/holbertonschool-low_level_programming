@@ -10,8 +10,8 @@ size_t print_dlistint(const dlistint_t *h)
 {
 	size_t i = 0;
 
-	if ((!h->next && !h->prev) || !h)
-		return (0);
+	if (!h)
+		return (i);
 
 	while (h)
 	{

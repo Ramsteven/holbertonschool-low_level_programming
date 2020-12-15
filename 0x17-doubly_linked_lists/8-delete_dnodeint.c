@@ -29,7 +29,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		} else
 			return (-1);
 	}
-	else if (index > i)
+	else if (index > i || !tmp)
 		return (-1);
 	else if (i == index)
 	{

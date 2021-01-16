@@ -67,5 +67,5 @@ int check(const char *key, hash_node_t *content, const char *value)
 		}
 		compare = compare->next;
 	}
-	return (1);
+	return (0);
 }

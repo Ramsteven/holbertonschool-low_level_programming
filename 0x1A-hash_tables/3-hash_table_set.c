@@ -25,7 +25,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (ht->array[index] && !(check(key, ht->array[index], value)))
 		return (1);
 
-	new_node = malloc(sizeof(new_node));
+	new_node = malloc(sizeof(hash_node_t));
 	if (!new_node)
 		return (0);
 

@@ -71,9 +71,9 @@ int check(const char *key, hash_node_t *content, const char *value)
 		{
 			free(compare->value);
 			compare->value = strdup(value);
-			return (1);
+			return (0);
 		}
 		compare = compare->next;
 	}
-	return (0);
+	return (1);
 }

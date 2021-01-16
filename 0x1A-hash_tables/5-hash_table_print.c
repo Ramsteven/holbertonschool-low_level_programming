@@ -1,3 +1,6 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 #include "hash_tables.h"
 
 /**
@@ -14,23 +17,25 @@ void hash_table_print(const hash_table_t *ht)
 	int count = 0;
 	hash_node_t *tmp;
 
-	if (ht == NULL || ht->array == NULL)
+	if (!ht || ht->array == NULL)
+	{
 		return;
+	}
 
 	printf("{");
 	for (i = 0; i < ht->size; i++)
 	{
 		tmp = ht->array[i];
-		if (tmp == NULL)
-			continue;
 
-		if (count > 0)
-			printf(", ");
+		while (tmp)
+		{
+			if (count > 0)
+				printf(", ");
 
-		printf("'%s' : '%s'", ht->array[i]->key, ht->array[i]->value);
-		count++;
-
+			printf("'%s' : '%s'", ht->array[i]->key, ht->array[i]->value);
+			count++;
+			tmp = tmp->next;
+		}
 	}
-
 	printf("}\n");
 }

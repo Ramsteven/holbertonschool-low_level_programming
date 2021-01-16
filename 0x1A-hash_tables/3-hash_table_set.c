@@ -1,77 +1,61 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "hash_tables.h"
-
 /**
- * hash_table_set-  function that adds an element to the hash table.
- * @ht: hash table that
- * @key: key of hash_element
- * @value: value that  we get with the key
- *
- * Return: 1 if it succeded 0 otherwise
+ * hash_table_set - function that adds an element to the hash table.
+ * @ht: the hash table you want to add or update
+ * @key: is the key
+ * @value:the value associated with the key.
+ * Return: 1 if it succeeded, 0 if not
  */
-
-
-
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	hash_node_t *new_node;
-	unsigned long int index = key_index((const unsigned char *)key, ht->size);
+	unsigned long int idx = 0;
+	hash_node_t *new = NULL;
 
-	if (!key || !ht || !(*key) || !value)
+	if (!ht || !key || !(*key) || !value)
 		return (0);
 
-	if (ht->array[index] && !(check(key, ht->array[index], value)))
+	idx = key_index((const unsigned char *)key, ht->size);
+
+	if (ht->array[idx] && !(match(key, ht->array[idx], value)))
 		return (1);
 
-	new_node = malloc(sizeof(hash_node_t));
-	if (!new_node)
+	new = malloc(sizeof(hash_node_t));
+	if (!new)
 		return (0);
-
-	new_node->key = strdup(key);
-	new_node->value = strdup(value);
-
-	if (!(new_node->key) || !(new_node->value))
+	new->key = strdup(key);
+	new->value = strdup(value);
+	if (!(new->key) || !(new->value))
 	{
-		if (new_node->key)
-			free(new_node->key);
-		free(new_node);
+		if (new->key)
+			free(new->key);
+		free(new);
 		return (0);
 	}
-	new_node->next = ht->array[index];
-	ht->array[index] = new_node;
-	return (1);
-
-
-
+	new->next = ht->array[idx];
+	ht->array[idx] = new;
 	return (1);
 }
 
 /**
- * check- function that check and remplase one repet key in a linkedlist
- * @content: pointer point to linked list gives
- * @key: key of hash_element
- * @value: value that  we get with the key
- *
- * Return: 1 if it succeded 0 otherwise
+ *match - Check if a key value is already in a bucket.
+ * @key: key
+ * @arry: bucket
+ * @value: node value to update
+ * Return: 1 if not match and 0 if match
  */
-
-
-int check(const char *key, hash_node_t *content, const char *value)
+int match(const char *key, hash_node_t *arry, const char *value)
 {
+	hash_node_t *elment = arry;
 
-	hash_node_t *compare = content;
-
-	while (compare)
+	while (elment)
 	{
-		if (!strcmp(compare->key, key))
+		if (!(strcmp(elment->key, key)))
 		{
-			free(compare->value);
-			compare->value = strdup(value);
+			free(elment->value);
+			elment->value = strdup(value);
 			return (0);
 		}
-		compare = compare->next;
+		elment = elment->next;
 	}
 	return (1);
 }

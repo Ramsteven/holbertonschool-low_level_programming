@@ -50,6 +50,14 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	return (1);
 }
 
+/**
+ * check- function that check and remplase one repet key in a linkedlist
+ * @content: pointer point to linked list gives
+ * @key: key of hash_element
+ * @value: value that  we get with the key
+ *
+ * Return: 1 if it succeded 0 otherwise
+ */
 
 
 int check(const char *key, hash_node_t *content, const char *value)

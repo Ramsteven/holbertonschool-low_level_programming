@@ -14,11 +14,14 @@
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	hash_node_t *tmp;
-	unsigned long int index = key_index((const unsigned char *)key, ht->size);
+	unsigned long int index = 0;
+
+
 
 	if (!ht || ht->array == NULL || strlen(key) == 0 || !key || ht->size == 0)
 		return (NULL);
 
+	index = key_index((const unsigned char *)key, ht->size);
 	tmp = ht->array[index];
 	while (tmp)
 	{
